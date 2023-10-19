@@ -164,8 +164,8 @@
 </head>
 <body class="">
     <nav class="navbar navbar-expand-lg navbar-light bgcolorfornav mont1" >
-        <a class="navbar-brand" href="index2.html">
-            <img  src="../assets/VolCon2.png"> 
+        <a class="navbar-brand" href="index.html">
+            <img  src="assets/VolCon2.png"> 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -173,10 +173,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="activity2.html" style="color: #EAEFEB">Activity</a>
+                    <a class="nav-link" href="activity.html" style="color: #EAEFEB">Activity</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus2.html" style="color: #EAEFEB">About Us</a>
+                    <a class="nav-link" href="aboutus.html" style="color: #EAEFEB">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: #EAEFEB">Forum</a>
@@ -188,10 +188,7 @@
 
 
           <li class="nav-item nav-link ml-auto navbar-collapse">
-            <a href="profile.html" style="text-decoration: none; color: #EAEFEB;" class="bi bi-person-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-            </svg></a>
+            <a href="login.html" style="text-decoration: none; color: #EAEFEB;" class="bi bi-person-circle">Log In</a>
             &nbsp;&nbsp;
           </li>
         <br>
@@ -333,43 +330,22 @@
         <!-- Sidebar content -->
         <div class="col-lg-3 mb-4 mb-lg-0 px-lg-0 mt-lg-0">
           <div style="visibility: hidden; display: none; width: 285px; height: 801px; margin: 0px; float: none; position: static; inset: 85px auto auto;"></div><div data-Forum="{&quot;parent&quot;:&quot;#content&quot;,&quot;mind&quot;:&quot;#header&quot;,&quot;top&quot;:10,&quot;breakpoint&quot;:992}" data-toggle="sticky" class="sticky" style="top: 85px;"><div class="sticky-inner">
-            <a id="openModal" class="btn btn-lg btn-block btn-success rounded-0 py-4 mb-3 bg-op-6 roboto-bold ask-question-button" href="#" data-toggle="modal" data-target="#questionModal">Ask Question</a>
-          <!-- The Question Form Modal -->
-          <div class="modal" id="questionModal">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title" style="font-family: 'Montserrat', sans-serif;"><b>Ask a Question</b></h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <a id="openModal" class="btn btn-lg btn-block btn-success rounded-0 py-4 mb-3 bg-op-6 roboto-bold ask-question-button" data-toggle="modal" data-target="#modal6">Ask Question</a>
+            <!-- The Modal -->
+            <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    <p>You need to have an account in order to see more.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <!-- Replace the href with your registration link -->
+                    <a href="login.html" class="btn btn-primary" style="background-color: #79AC78; border-color: #79AC78;">Register</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-
-                      <!-- Modal body (the interactive form) -->
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group" style="font-family: 'Montserrat', sans-serif;">
-                      <label for="title">Title:</label>
-                      <input type="text" class="form-control" id="title" placeholder="Enter a title" required>
-                    </div>
-                    <div class="form-group" style="font-family: 'Montserrat', sans-serif;">
-                      <label for="question">Your Question:</label>
-                      <input type="text" class="form-control" id="question" placeholder="Enter your question" required>
-                    </div>
-                    <div class="form-group" style="font-family: 'Montserrat', sans-serif;">
-                      <label for="category">Category:</label>
-                      <select class="form-control" id="category">
-                        <option value="general">General</option>
-                        <option value="technical">Technical</option>
-                        <option value="support">Support</option>
-                        <!-- Add more categories as needed -->
-                      </select>
-                    </div>
-                    <button type="submit" style="background-color: #A0BA9F; color: white;" class="btn btn-block">Ask</button>
-                  </form>
                 </div>
-              </div>
             </div>
-          </div>
             <div class="bg-white mb-3">
               <h4 class="px-3 py-4 op-5 m-0">
                 Active Topics
@@ -504,7 +480,7 @@
     <!-- Bootstrap and jQuery scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
