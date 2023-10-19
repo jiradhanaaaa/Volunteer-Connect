@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        ::placeholder{
+            color: #79AC78;
+        }
+        .mont1{
+            font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire page */
+        }
+        .pop1{
+          font-family: 'Poppins';
+        }
+        .justcolor{
+            color: #79AC78;
+        }
+        .navbar-brand img {
+            max-width: 40px; /* Adjust the max-width as needed */
+            height: auto;
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            padding-bottom: 10px;
+             /* Adjust this value to control the line's position */
+        }
+
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px; /* Height of the line */
+            background-color: #79AC78; /* Color of the line */
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: center center;
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        /* Remove hover line for the search and profile icons */
+        .navbar-nav .nav-link .fa-search::after,
+        .navbar-nav .nav-link .fa-user::after {
+            display: none;
+        }
+    </style>
+</head>
+<!--Header-->
+<body class="mont1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mont1">
+        <a class="navbar-brand" href="index.html">
+            <img  src="assets/VolCon.png"> <!-- Replace "your-logo.png" with your actual logo image -->
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+
+        
+    </nav>
+
+    <div class="container pop1"> 
+        <section class="vh-100">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+               
+                    <div class="card-body p-5 text-center">
+          
+                      <h3 class="mb-5" style= "font-weight: bolder;">Sign In</h3>
+          
+                      <div class="form-outline mb-4">
+                        <input type="email" id="typeEmailX-2" style="background-color: #F1F1F5;" placeholder="Enter Email" class="form-control form-control-lg" />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="username" id="typeUsernameX-2" style="background-color: #F1F1F5;" placeholder="Create Username" class="form-control form-control-lg" />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="phonenumber" id="typephoneNumberX-2" style="background-color: #F1F1F5;" placeholder="Contact Number" class="form-control form-control-lg" />
+                      </div>
+          
+                      <div class="form-outline mb-4">
+                        <input type="password" id="typePasswordX-2" style="background-color: #F1F1F5;" placeholder="Password" class="form-control form-control-lg bi bi-eye-slash-fill" />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="password" id="typePasswordX-2" style="background-color: #F1F1F5;" placeholder="Confirm Password" class="form-control form-control-lg bi bi-eye-slash-fill" />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                      <select class="form-control form-control-lg bi bi-eye-slash-fill form-select;" style="background-color: #F1F1F5;" aria-label="Default select example">
+                        <option selecte style="opacity: 0.5;">Category You're Interest In</option>
+                        <option value="1">Language</option>
+                        <option value="2">Medication</option>
+                        <option value="3">Humanity</option>
+                        <option value="3">Education</option>
+
+                      </select>
+                    </div>
+          <br>
+                      <!-- Checkbox -->
+                      <a href="after/index2.html" class="btn btn-primary btn-lg btn-block" style="background-color: #79AC78; border-color: #79AC78; text-align: center; text-decoration: none; color: white;">Register</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="text-center">
+        <p style="opacity: 0.5;">Or log in with:</p>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f justcolor"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google justcolor"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter justcolor"></i>
+        </button>
+
+      </div>
+<br><br>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted mont1" >
+ 
+  
+    <!-- Section: Links  -->
+    <section class="" style="background-color: #EAEFEB; ">
+        <br>
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3" style=""></i>VolCon
+            </h6>
+            <p>
+                Volunteer Connect is a web platform dedicated to facilitating volunteer opportunities, connecting individuals
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Get Involved
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Donation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Community</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Engagement</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">More</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              About Us
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">How we started</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Leaders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Board</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+                <form>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          
+                    <br>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+   
+  </footer>
+  <!-- Footer -->
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
