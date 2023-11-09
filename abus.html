@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        .body
+        {
+        margin-top:20px;
+        background:#eee;
+        color: #708090;
+        }
+        .icon-1x {
+            font-size: 24px !important;
+        }
+        .a{
+            text-decoration:none;    
+        }
+        .text-primary, a.text-primary:focus, a.text-primary:hover {
+            color: #00ADBB!important;
+        }
+        .text-black, .text-hover-black:hover {
+            color: #000 !important;
+        }
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+        .mont1{
+            font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire page */
+        }
+        .pop1{
+          font-family: 'Poppins';
+        }
+        .jumbotron{   
+        padding-top: 0px;
+        padding-bottom:0px;
+        background-size: cover;
+        height:560px;
+        background-color: #A0BA9F;
+        }
+        .justcolor{
+            color: #84a98c;
+        }
+        .navbar-brand img {
+            max-width: 40px; /* Adjust the max-width as needed */
+            height: auto;
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
+        .bgcolorfornav{
+          background-color: #84a98c;
+        }
+        .navbar-nav .nav-link {
+            position: relative;
+            padding-bottom: 10px;
+             /* Adjust this value to control the line's position */
+        }
+
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px; /* Height of the line */
+            background-color: #84a98c; /* Color of the line */
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: center center;
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        /* Remove hover line for the search and profile icons */
+        .navbar-nav .nav-link .fa-search::after,
+        .navbar-nav .nav-link .fa-user::after {
+            display: none;
+        }
+
+      .chat-container {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .message {
+      background: #f2f2f2;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .user-message {
+      background: #4F709C;
+      color: #fff;
+    }
+
+    .input-container {
+      display: flex;
+    }
+
+    .input-container input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .input-container button {
+      background-color: #4F709C;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    /* Custom button style */
+    .ask-question-button {
+      background-color: #A0BA9F;
+      border-color: #A0BA9F;
+    }
+    .modal-dialog {
+      max-width: 600px; /* Set the maximum width for the modal */
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    /* Custom button style */
+    .ask-question-button {
+      background-color: #A0BA9F;
+      border-color: #A0BA9F;
+    }
+
+    .form-group {
+      width: 100%;
+    }
+    </style>
+</head>
+<body class="">
+    <nav class="navbar navbar-expand-lg navbar-light bgcolorfornav mont1" >
+        <a class="navbar-brand" href="index.html">
+            <img  src="assets/VolCon2.png"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html" style="color: #EAEFEB; font-size: large;">Aktivitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="abus.html" style="color: #EAEFEB; font-size: large;">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="disfor.html" style="color: #EAEFEB; font-size: large;">Forum</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-nav">
+
+
+
+          <li class="nav-item nav-link ml-auto navbar-collapse">
+            <a href="login.html" style="text-decoration: none; color: #EAEFEB; font-size: large;" class="bi bi-person-circle; font-size: large;">Log In</a>
+            &nbsp;&nbsp;
+          </li>
+        <br>
+        </div>
+    </nav><br>
+<!--Body-->
+
+<!-- About 1 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5" style="">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-6 col-xl-5">
+          <img class="img-fluid rounded" loading="lazy" src="assets/yoouthday.jpg" alt="About 1">
+        </div>
+        <div class="col-12 col-lg-6 col-xl-7">
+          <div class="row justify-content-xl-center">
+            <div class="col-12 col-xl-11">
+              <h2 class="mb-3 mont1" style="font-weight: bolder;">Who Are We?</h2>
+              <p class="lead fs-4 text-secondary mb-3 mont1">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
+              <p class="mb-5 mont1">We are a fast-growing company, but we have never lost sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always looking for new ways to improve our products and services.</p>
+              <div class="row gy-4 gy-md-0 gx-xxl-5X">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex">
+                    <div class="me-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h2 class="h4 mb-3 mont1" style="font-weight: bolder;">Versatile Brand</h2>
+                      <p class="text-secondary mb-0 mont1">We are crafting a digital method that subsists life across all mediums.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="d-flex">
+                    <div class="me-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                        <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h2 class="h4 mb-3 mont1" style="font-weight: bolder;">Digital Agency</h2>
+                      <p class="text-secondary mb-0 mont1">We believe in innovation by merging primary with elaborate ideas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<br>
+
+
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted mont1" >
+ 
+  
+    <!-- Section: Links  -->
+    <section class="" style="background-color: #a2b9a7; color: #EAEFEB;">
+        <br>
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3" style=""></i>VolCon
+            </h6>
+            <p>
+                Volunteer Connect is a web platform dedicated to facilitating volunteer opportunities, connecting individuals
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Get Involved
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Donation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Community</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Engagement</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">More</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Tentang Kami
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">How we started</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Leaders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Board</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+                <form>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          
+                    <br>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button" style="background-color: #84a98c; border-color: #84a98c;">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+   
+  </footer>
+  <!-- Footer -->
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
