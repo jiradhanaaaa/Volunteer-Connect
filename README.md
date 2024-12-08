@@ -1,15 +1,11 @@
-# About VolCon: Volunteer Connect
-**VolCon** is a web-based platform designed to bridge the gap between volunteers and nonprofit organizations in Indonesia. It uses the Design Thinking methodology, emphasizing user-centered design to deliver an intuitive interface and impactful user experiences.
+About VolCon: Volunteer Connect
+VolCon is a web-based platform designed to bridge the gap between volunteers and nonprofit organizations in Indonesia. By using the Design Thinking methodology, this project prioritizes a user-centered approach to ensure an intuitive interface and effective user experiences.
 
-# Project Highlights
-## User-Centered Research:
-Conducted interviews and surveys to understand the needs of volunteers and organizations.
+Project Highlights
+User-Centered Research: Conducted interviews and surveys to identify the needs of volunteers and organizations.
+UI/UX Development: Prototyped and designed using Figma for an intuitive and visually appealing interface.
+Usability Testing: Evaluated with System Usability Scale (SUS) scores and validated through T-Test analysis for optimal design performance.
+VolCon simplifies the process of finding and participating in nonprofit initiatives, boosting volunteerism and amplifying the impact of social causes.
 
-## UI/UX Development:
-Designed and prototyped using Figma to create an intuitive, user-friendly interface.
-
-## Usability Testing:
-Evaluated using the System Usability Scale (SUS), validated with T-Test analysis to ensure high usability and satisfaction.
-
-# Attachments
-For detailed insights and supporting materials, explore the following:
+Attachments
+For additional details, access the project documentation and prototypes:
