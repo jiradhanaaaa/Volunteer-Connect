@@ -1,4 +1,4 @@
-About VolCon: Volunteer Connect
+# About VolCon: Volunteer Connect
 VolCon is a web-based platform developed to bridge the gap between volunteers and nonprofit organizations in Indonesia. Leveraging the Design Thinking methodology, the project emphasizes a user-centered approach to ensure an intuitive interface and effective user experiences.
 
 Project Highlights:
